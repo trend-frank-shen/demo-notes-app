@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import LoaderButton from '../components/LoaderButton';
 import { onError } from '../lib/errorLib';
 import { useFormFields } from '../lib/hooksLib';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   const nav = useNavigate();
@@ -60,6 +61,7 @@ export default function Login() {
           />
         </Form.Group>
         <div className="d-grid gap-2">
+        <Link to="/login/reset">Forgot password?</Link>
           <LoaderButton
             block="true"
             size="lg"
