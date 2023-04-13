@@ -61,7 +61,7 @@ export default function Login() {
           />
         </Form.Group>
         <div className="d-grid gap-2">
-        <Link to="/login/reset">Forgot password?</Link>
+          <Link to="/login/reset">Forgot password?</Link>
           <LoaderButton
             block="true"
             size="lg"
